@@ -1,0 +1,59 @@
+{
+    "full_name": "Faria Jaheen",
+    "name": "Faria",
+    "current_role": "Artificial Intelligence Researcher (PhD)",
+    "phd_status": "Completed",
+    "phd_completion_year": 2025,
+    "years_experience": 12,
+  
+    "contact": {
+      "email": "fariajaheen@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/fariajaheen",
+      "google_scholar": "https://scholar.google.ca/citations?user=w92696kAAAAJ&hl=en",
+      "github": "https://github.com/FariaJaheen"
+    },
+  
+    "expertise": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Robotics",
+      "Agentic AI",
+      "Generative AI",
+      "Retrieval-Augmented Reasoning",
+      "Multi-Agent Learning",
+      "Cloud-Native Computational Systems",
+      "Scalable MLOps Infrastructures",
+      "Kinematic Modeling and Inverse Kinematics",
+      "Applied AI for Healthcare",
+      "Enterprise Automation",
+      "Antenna Design and Microwave Engineering"
+    ],
+  
+    "education": [
+      {
+        "degree": "PhD in Electrical Engineering and Computer Science",
+        "institution": "University of Ottawa",
+        "year": 2025
+      },
+      {
+        "degree": "MSc in Electrical and Electronic Engineering",
+        "institution": "American International University-Bangladesh",
+        "year": 2018
+      },
+      {
+        "degree": "BSc in Electrical and Electronic Engineering",
+        "institution": "American International University-Bangladesh",
+        "year": 2013
+      }
+    ],
+  
+    "research_profile": {
+      "publication_count": 6,
+      "venues": [
+        "IEEE Access",
+        "Frontiers in Robotics and AI",
+        "PIERS"
+      ],
+      "focus": "Translating rigorous, publication-quality research into scalable, explainable, and production-ready AI systems."
+    }
+  }

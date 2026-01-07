@@ -1,0 +1,7 @@
+Faria Jaheen is an Artificial Intelligence Researcher (PhD) with over 12 years of global, interdisciplinary experience spanning AI research, robotics, and cloud-native systems. 
+Her work lies at the intersection of agentic AI, generative modeling, and scalable machine learning, with a strong focus on translating advanced research into production-grade solutions 
+across healthcare, robotics, and enterprise automation. She has led the design and deployment of end-to-end AI systems, including agentic AI architectures, retrieval-augmented reasoning 
+pipelines, and cloud-native ML platforms using FastAPI, Docker, Kubernetes, and Azure/AWS. Her doctoral research advanced kinematic modeling, inverse kinematics, and learning-based 
+trajectory planning for multi-DoF C-arm with operating table systems achieving significant gains in accuracy, runtime efficiency, and explainability. Faria is the author of six peer-reviewed publications 
+in leading venues such as IEEE Access, Frontiers in Robotics and AI, and PIERS covering topics including robotic kinematics, machine learning-based modeling, agentic architectures, 
+and microwave engineering. She is recognized for bridging rigorous, publication-quality research with real-world impact through scalable, ethical, and enterprise-ready AI systems.
