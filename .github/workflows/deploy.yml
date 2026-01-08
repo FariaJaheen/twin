@@ -75,9 +75,9 @@ jobs:
         working-directory: ./terraform
         run: |
           terraform workspace select -or-create ${{ github.event.inputs.environment || 'dev' }}
-          echo "cloudfront_url=$(terraform output -raw cloudfront_url)" >> $GITHUB_OUTPUT
-          echo "api_url=$(terraform output -raw api_gateway_url)" >> $GITHUB_OUTPUT
-          echo "frontend_bucket=$(terraform output -raw s3_frontend_bucket)" >> $GITHUB_OUTPUT
+          echo "cloudfront_url=$(terraform output -raw cloudfront_url 2>/dev/null || true)" >> $GITHUB_OUTPUT
+          echo "api_gateway_url=$(terraform output -raw api_gateway_url 2>/dev/null || true)" >> $GITHUB_OUTPUT
+          echo "frontend_bucket=$(terraform output -raw s3_frontend_bucket 2>/dev/null || true)" >> $GITHUB_OUTPUT
 
       - name: Invalidate CloudFront
         run: |
@@ -95,5 +95,5 @@ jobs:
         run: |
           echo "✅ Deployment Complete!"
           echo "🌐 CloudFront URL: ${{ steps.deploy_outputs.outputs.cloudfront_url }}"
-          echo "📡 API Gateway: ${{ steps.deploy_outputs.outputs.api_url }}"
+          echo "📡 API Gateway: ${{ steps.deploy_outputs.outputs.api_gateway_url }}"
           echo "🪣 Frontend Bucket: ${{ steps.deploy_outputs.outputs.frontend_bucket }}"
