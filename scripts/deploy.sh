@@ -6,6 +6,16 @@ AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 # Prefer AWS_REGION/AWS_DEFAULT_REGION from CI, fallback to DEFAULT_AWS_REGION, then us-east-1
 AWS_REGION="${AWS_REGION:-${AWS_DEFAULT_REGION:-${DEFAULT_AWS_REGION:-us-east-1}}}"
 
+# Get environment from script argument or default to dev
+ENVIRONMENT="${ENVIRONMENT:-${1:-dev}}"
+if [[ -z "$ENVIRONMENT" ]]; then
+  echo "ERROR: ENVIRONMENT is empty"
+  exit 1
+fi
+ENVIRONMENT="${ENVIRONMENT#/}"   # strip accidental leading slash
+ENVIRONMENT="${ENVIRONMENT%/}"   # strip accidental trailing slash
+
+
 TF_STATE_BUCKET="twin-terraform-state-${AWS_ACCOUNT_ID}"
 TF_STATE_KEY="${ENVIRONMENT}/terraform.tfstate"
 TF_LOCK_TABLE="twin-terraform-locks"
