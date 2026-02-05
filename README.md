@@ -171,7 +171,3 @@ AI Researcher & Engineer
 - LinkedIn: https://www.linkedin.com/in/fariajaheen
 
 ---
-
-# About This Project
-
-This project explores next-generation AI-driven digital twins for professional intelligence representation, autonomous reasoning, and intelligent interaction.
