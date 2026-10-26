@@ -73,6 +73,24 @@ This modular design enables scalability, extensibility, and deployment across cl
 
 ---
 
+# AI Safety, Reliability & Evaluation
+
+This project explores the development of a personalized, agentic AI Digital Twin using large language models, retrieval-augmented generation (RAG), and context-aware reasoning.
+
+Beyond functional performance, the system provides an opportunity to investigate important challenges in deploying reliable and controllable autonomous AI systems.
+
+## Safety-Relevant Engineering Considerations
+
+- Grounded Reasoning: Retrieval-augmented generation provides relevant contextual information to support responses and reduce dependence on unsupported model-generated claims.
+
+- Context and Instruction Boundaries: Context prioritization and dynamic routing provide architectural foundations for investigating how agents distinguish user instructions from retrieved information.
+
+- Agent Reliability: Multi-agent orchestration introduces opportunities to evaluate consistency, task completion, and failure propagation across components.
+
+- Monitoring and Evaluation: Structured evaluation can assess response reliability, grounding, instruction adherence, and behavior under unexpected inputs.
+
+---
+
 # Tech Stack
 
 - Python  
